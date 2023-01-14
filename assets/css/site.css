@@ -1,0 +1,36 @@
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--bs-gray-500);
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--bs-gray-600);
+}
+
+.logo-img {
+  max-width: 48px;
+}
+
+.logo-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  margin-left: 0.5rem;
+}
+
+.link-secondary {
+  color: #aebcc9!important;
+}

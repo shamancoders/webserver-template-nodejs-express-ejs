@@ -5,6 +5,14 @@
 
 # Web Server Template Nodejs + Expressjs + ejs
 
+- [Dependencies](#dependencies)
+- [Project File Structure](#project-file-structure)
+  - [File : `.env` Node Environment Settings](#file--env-node-environment-settings)
+- [Installation](#installation)
+  - [Download](#download)
+  - [Cloning](#cloning)
+- [Site Preview](#site-preview)
+
 
 ## Dependencies
 
@@ -38,7 +46,7 @@ This template has some dependencies shown below. But it is not using all of them
 
 ```
 
-## Workspace File Structure
+## Project File Structure
 
 ```yaml
 .env    # process.env.{variables}
@@ -104,10 +112,12 @@ PORT=3011
   `https://github.com/shamancoders/webserver-template-nodejs-express-ejs/archive/refs/heads/main.zip`
 2.  Extract zip file `webserver-template-nodejs-express-ejs-main.zip`
 
-```cmd
+```PS
 cd webserver-template-nodejs-express-ejs
 
 npm install
+
+npm start
 ```
 
 
@@ -120,8 +130,14 @@ npm install
 3.  GitHub CLI: <br/>
   `gh repo clone shamancoders/webserver-template-nodejs-express-ejs`
 
-```cmd
+```PS
 cd webserver-template-nodejs-express-ejs
 
 npm install
+
+npm start
 ```
+
+## Site Preview
+
+![MiaJS web server template](assets/img/preview-dark.jpg)

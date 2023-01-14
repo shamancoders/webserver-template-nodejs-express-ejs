@@ -1,3 +1,21 @@
+<script type="text/javascript">
+ 
+  function toggleTheme(){
+    $('body').toggleClass('text-bg-dark')
+    $('header .theme-icon').toggleClass('d-none')
+
+    if($('body').hasClass('text-bg-dark')){
+      localStorage.setItem('theme','dark')
+    }else{
+      localStorage.setItem('theme','')
+    }
+
+  }
+
+  if((localStorage.getItem('theme') || '')!='dark'){
+    toggleTheme()
+  }
+</script>
 <header>
   <div class="container">
     <nav class="navbar navbar-expand-md" aria-label="Fourth navbar example">
@@ -6,16 +24,22 @@
         <div class="logo-text">MiaJS Template</div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-menu-button-wide-fill fs-3"></i>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0 fs-5">
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="javascript:toggleTheme()" title="Use dark themes, save the planet">
+              <i class="theme-icon bi bi-moon-stars-fill fs-5"></i>
+              <i class="theme-icon bi bi-brightness-high-fill fs-5 d-none"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

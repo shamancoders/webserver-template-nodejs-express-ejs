@@ -29,8 +29,25 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 32px;
   margin-left: 0.5rem;
+  
 }
 
 .link-secondary {
   color: #aebcc9!important;
+}
+.navbar a, footer .nav a, .table, .table a {
+  color:unset!important;
+  text-decoration: none!important;
+}
+
+.navbar-toggler {
+  color:unset!important;
+
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 1px;
+}
+
+.card-body, .card-header {
+  color:black;
 }

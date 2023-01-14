@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nodemon start.js"
+    "start": "node start.js"
   },
   "dependencies": {
     "atob": "^2.1.2",
